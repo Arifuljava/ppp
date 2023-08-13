@@ -74,7 +74,7 @@ int REQUEST_ENABLE_BT =1 ;
         Toast.makeText(this, ""+bluetoothLEAvailable, Toast.LENGTH_SHORT).show();
 
         String deviceId = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
-//   startActivity(new Intent(getApplicationContext(),TestingActivity.class));
+   startActivity(new Intent(getApplicationContext(),DiscoveriresActivity.class));
        /*
         PackageManager pm = MainActivity.this.getPackageManager();
         if (pm.hasSystemFeature(PackageManager.FEATURE_PC))

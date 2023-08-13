@@ -14,7 +14,6 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
 
@@ -28,8 +27,12 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"  tools:node="replace"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        tools:node="replace" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <uses-feature
         android:name="android.hardware.bluetooth"
@@ -41,9 +44,9 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" tools:node="remove"/>
-
-
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT"
+        tools:node="remove" />
 
     <application
         android:allowBackup="true"
@@ -53,10 +56,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestingActivity">
-
-
-        </activity>
+        <activity android:name=".DiscoveriresActivity"></activity>
+        <activity android:name=".TestingActivity"></activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".Findlocation" />
         <activity android:name=".TwoInchPrinterActivity" />
